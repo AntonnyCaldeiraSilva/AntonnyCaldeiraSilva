@@ -58,7 +58,7 @@ Atualmente construindo o **Komercio**, um marketplace conectando produtores loca
 
 ## 📌 Projeto em Destaque
 
-<a href="https://github.com/AntonnyCaldeiraSilva/komercio">
+<a href="https://github.com/H3nr7qu3/komercio">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=AntonnyCaldeiraSilva&repo=komercio&theme=tokyonight&hide_border=true" />
 </a>
 
