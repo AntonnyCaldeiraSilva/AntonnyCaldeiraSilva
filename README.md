@@ -4,9 +4,13 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-antonny--caldeira--dev-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/antonny-caldeira-dev)
-[![Gmail](https://img.shields.io/badge/Gmail-Fale_comigo-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:antonnycaldeirasilva@gmail.com)
-![Status](https://img.shields.io/badge/Aberto_a_oportunidades-22c55e?style=for-the-badge)
+<a href="https://www.linkedin.com/in/antonny-caldeira-dev">
+  <img src="https://img.shields.io/badge/LinkedIn-antonny--caldeira--dev-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:antonnycaldeirasilva@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-Fale_comigo-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+</a>
+<img src="https://img.shields.io/badge/Aberto_a_oportunidades-22c55e?style=for-the-badge" alt="Status" />
 
 </div>
 
@@ -28,30 +32,38 @@
 
 <div align="center">
 
-**Design & UX**
+### Design & UX
 
 <img src="https://skillicons.dev/icons?i=figma&theme=dark" alt="Figma" />
-<br/>
-![Design Systems](https://img.shields.io/badge/Design_Systems_&_Tokens-FF61F6?style=for-the-badge&logo=material-design&logoColor=white)
-![WCAG](https://img.shields.io/badge/Accessibility_WCAG-005A9C?style=for-the-badge&logo=w3c&logoColor=white)
-![UX Research](https://img.shields.io/badge/UX_Research_&_Wireframing-111111?style=for-the-badge)
+<br/><br/>
+<img src="https://img.shields.io/badge/Design_Systems_&_Tokens-FF61F6?style=for-the-badge&logo=material-design&logoColor=white" alt="Design Systems" />
+<img src="https://img.shields.io/badge/Accessibility_WCAG-005A9C?style=for-the-badge&logo=w3c&logoColor=white" alt="WCAG" />
+<img src="https://img.shields.io/badge/UX_Research_&_Wireframing-111111?style=for-the-badge" alt="UX Research" />
 
-**Frontend**
+<br/><br/>
+
+### Frontend
 
 <img src="https://skillicons.dev/icons?i=vue,ts,js,tailwind,html,css&theme=dark" alt="Vue, TypeScript, JavaScript, Tailwind, HTML, CSS" />
 
-**Backend & Sistemas**
+<br/><br/>
+
+### Backend & Sistemas
 
 <img src="https://skillicons.dev/icons?i=rust,java,spring,nodejs,c,cpp&theme=dark" alt="Rust, Java, Spring, Node.js, C, C++" />
 
-**Dados, Infra & Hardware**
+<br/><br/>
+
+### Dados, Infra & Hardware
 
 <img src="https://skillicons.dev/icons?i=postgres,mysql,redis,docker,githubactions,linux,git,raspberrypi&theme=dark" alt="PostgreSQL, MySQL, Redis, Docker, GitHub Actions, Linux, Git, Raspberry Pi" />
 
-**IA no fluxo de desenvolvimento**
+<br/><br/>
 
-![Claude Code](https://img.shields.io/badge/Claude_Code_&_Skills-D97706?style=for-the-badge&logo=anthropic&logoColor=white)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol-6e40c9?style=for-the-badge)
+### IA no fluxo de desenvolvimento
+
+<img src="https://img.shields.io/badge/Claude_Code_&_Skills-D97706?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
+<img src="https://img.shields.io/badge/Model_Context_Protocol-6e40c9?style=for-the-badge" alt="MCP" />
 
 </div>
 
@@ -67,9 +79,13 @@
   <img src="assets/mosaico.svg" width="100%" alt="Mosaico, plataforma de comércio e conexão para produtores locais" />
 </a>
 
-[![Conhecer o Mosaico](https://img.shields.io/badge/Conhecer_o_Mosaico-sejamosaico.com.br-10b981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sejamosaico.com.br)
-
 <br/>
+
+<a href="https://sejamosaico.com.br">
+  <img src="https://img.shields.io/badge/Conhecer_o_Mosaico-sejamosaico.com.br-10b981?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Conhecer o Mosaico" />
+</a>
+
+<br/><br/>
 
 <img src="assets/conect-tool.svg" width="49%" alt="conect-tool, dois computadores, um único sistema" />
 <img src="assets/programa-ob.svg" width="49%" alt="Programa OB, extensão educacional" />
@@ -121,10 +137,16 @@
 
 Se você busca alguém que **desenhe, programe e converse com os dois lados do time**, vai ser um prazer trocar ideia.
 
-[![LinkedIn](https://img.shields.io/badge/Conectar_no_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/antonny-caldeira-dev)
-[![Email](https://img.shields.io/badge/Enviar_um_e--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:antonnycaldeirasilva@gmail.com)
+<br/><br/>
 
-<br/>
+<a href="https://www.linkedin.com/in/antonny-caldeira-dev">
+  <img src="https://img.shields.io/badge/Conectar_no_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:antonnycaldeirasilva@gmail.com">
+  <img src="https://img.shields.io/badge/Enviar_um_e--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+
+<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=AntonnyCaldeiraSilva&color=6e40c9&style=for-the-badge&label=VISITAS+AO+PERFIL" alt="Visitas ao perfil" />
 
