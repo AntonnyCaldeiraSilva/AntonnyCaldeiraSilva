@@ -80,6 +80,7 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
 ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
@@ -106,9 +107,81 @@
 
 ## 📌 Projetos em destaque
 
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=110&section=header&text=conect-tool&fontSize=44&fontColor=ffffff&desc=Dois%20PCs.%20Um%20%C3%BAnico%20sistema.&descSize=18&descAlignY=72" width="100%" alt="conect-tool" />
+
+![Rust](https://img.shields.io/badge/100%25_Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Linux](https://img.shields.io/badge/Pop!__OS_Wayland-48B9C7?style=for-the-badge&logo=pop-os&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows_10_LTSC-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/Wasmtime-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
+![wgpu](https://img.shields.io/badge/Iced_+_wgpu-1F1F1F?style=for-the-badge)
+
+</div>
+
+**Fusão simbiótica invisível entre Windows 10 e Linux (Wayland).** Um daemon em segundo plano que faz o segundo computador se comportar como **uma tela a mais** do primeiro: você arrasta uma janela para o outro monitor e a tarefa passa para a outra máquina, sem janela de acesso remoto e sem compressão destrutiva 4:2:0.
+
+```mermaid
+flowchart LR
+    subgraph A["🐧 Desktop · Pop!_OS 24.04 (Wayland)"]
+        A1[conect daemon]
+        A2[Pipeline visual GPU]
+        A3[Periféricos]
+    end
+    subgraph B["🪟 Notebook · Windows 10 IoT LTSC"]
+        B1[conect daemon]
+        B2[Pipeline visual GPU]
+        B3[Periféricos]
+    end
+    A1 <== "ULLTP v3 · transporte próprio" ==> B1
+    A2 -. "janelas atravessam monitores" .-> B2
+    A3 <-. "input, áudio, clipboard, USB/IP" .-> B3
+```
+
+#### 🎯 Metas de projeto
+
+| ⚡ Janelas entre monitores | 🖱️ Periféricos | 🔀 Migração de tarefas | 🎧 Áudio |
+| :---: | :---: | :---: | :---: |
+| **1,65 a 3,80 ms** <br/><sub>Zero-Copy UMA + VRR</sub> | **0 ms** <br/><sub>de reconciliação</sub> | **≤ 0,48 ms** <br/><sub>corte especulativo S2P</sub> | **≤ 5 ms** <br/><sub>PipeWire ↔ WASAPI</sub> |
+
+<sub>Valores definidos na especificação do projeto como metas de latência, validados pela bancada Clique→Pixel.</sub>
+
+<details>
+<summary><b>🏛️ Os 8 pilares da arquitetura (clique para expandir)</b></summary>
+
+<br/>
+
+| Pilar | Domínio | Destaques |
+| :--- | :--- | :--- |
+| **1 · Posse e Consistência** | Épocas e consenso entre as máquinas | Leases monotônicos, compensação de *clock drift*, *fencing tokens* e prova formal em **TLA+** |
+| **2 · Transporte e Rede** | Protocolo **ULLTP v3** | Cabeçalho fixo de 32 B (`#[repr(C)]`), `io_uring` / Winsock RIO, codificação de rede AC-CRLNC, criptografia AEGIS-128L |
+| **3 · Pipeline Visual** | Zero-Copy UMA | Codec GPU G-SLIC (YCoCg-R, wavelet CDF 5/3), protocolo foveado FSVP e VRR |
+| **4 · Live Migration** | Handoff de tarefas | Wasmtime com ABI própria, corte especulativo S2P, Conect-VFS v2 (`FUSE_PASSTHROUGH` / ProjFS + FastCDC) |
+| **5 · Observabilidade** | Telemetria lock-free | *Ring buffers* SPSC alinhados em cache, vetor de pressão do nó a cada 10 ms |
+| **6 · Escalonador Silencioso** | Proteção contra sobrecarga | 4 zonas com histerese (Schmitt), escudo Anti-Swap/OOM e modo *Thin-Viewport* com 0 CPU |
+| **7 · Periféricos** | Barramento virtual | Input P0 de 24 B com bitmask anti-tecla-presa, clipboard *delayed-rendering*, câmera e USB/IP |
+| **8 · Workspace Cargo** | Organização do código | DAG de 5 camadas, padrão **Sans-IO**, `unsafe` isolado em `conect-sys` e *gatekeeper* arquitetural |
+| **UI 1–4 · Painel nativo** | Sob demanda | `conect-ui` (Iced + wgpu, 0 MB quando fechado), `conect-tray`, `conect doctor` e IPC com `rkyv` |
+
+</details>
+
+<details>
+<summary><b>📦 Governança e engenharia de processo</b></summary>
+
+<br/>
+
+- **Versionamento semântico tridimensional:** versão do software, do protocolo ULLTP e do IPC evoluem de forma independente
+- **Trunk-Based Development** com *Conventional Commits* e checklist de gatekeeper arquitetural
+- **Documentação formal** mantida em um vault do Obsidian, com um documento por pilar
+- Arquivos de governança: `VERSIONING.md`, `CONTRIBUTING.md` e `CHANGELOG.md`
+
+</details>
+
+<br/>
+
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### 🧩 Mosaico
 <sub>antigo *Komercio*</sub>
@@ -118,7 +191,7 @@ Plataforma de comércio e conexão para **produtores locais**, mantida como orga
 `Vue 3` `TypeScript` `Spring Boot` `PostgreSQL` `Figma`
 
 </td>
-<td width="33%" valign="top">
+<td width="50%" valign="top">
 
 ### 🎓 Programa OB
 <sub>extensão educacional</sub>
@@ -126,16 +199,6 @@ Plataforma de comércio e conexão para **produtores locais**, mantida como orga
 Idealizei e lidero tecnicamente o projeto que ensina **lógica de programação e pensamento computacional** a alunos do 9º ano da rede municipal, com foco em inclusão digital.
 
 `Algoritmos` `Didática` `Mentoria`
-
-</td>
-<td width="33%" valign="top">
-
-### 🦀 Distributed & Low-Level Labs
-<sub>laboratório de estudos</sub>
-
-Implementações práticas de **sistemas distribuídos**, concorrência segura, otimização de latência e microsserviços resilientes.
-
-`Rust` `Networking` `Concorrência`
 
 </td>
 </tr>
